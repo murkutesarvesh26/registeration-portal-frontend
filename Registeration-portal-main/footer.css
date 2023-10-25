@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4F709C;
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  
+  .footer-left {
+    flex-shrink: 0;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer a {
+    margin-left: 0.5rem;
+  }
+  
+  .footer img {
+    
+    height: 20px;
+  }
+  
