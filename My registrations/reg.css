@@ -1,0 +1,361 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* my code starts here*/ 
+
+body {
+    background-color: #0A2628;
+
+}
+
+nav{
+    padding: 2.3vw;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot { 
+    align-self: center;
+    height: 4vw;
+    width: 4vw;
+    background-color: #B5BC89;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-bar{
+    width: 25vw;
+}
+
+.right-box{
+    margin: 7vh;
+    height: 75vh; 
+    width: 75vw;
+    background-color: #B5BC89;
+}
+
+.box-nav{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2vw;
+    margin: 1.2vw;
+    align-items: center;
+}
+
+.my-reg{
+    text-decoration-color: #0A2628  ;
+    font-size:xx-large;
+}
+
+.box-nav a{
+    text-decoration: none;
+}
+.add-reg{ 
+    height: 5vh; 
+    width: 14vw;
+    color: white;
+    background-color: #0A2628;
+    text-align: center;
+    line-height: 5vh;
+    
+}
+
+.add-reg :hover{ 
+    cursor: pointer;
+}
+
+.second-row{
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw;
+    margin: 0.5vw; 
+
+}
+
+.search-members{
+    margin-left: 1.4vw; 
+}
+.search-members input[type="search"]{ 
+    width: 15vw;
+    border : none; 
+    border-bottom: 0.2vh solid #0A2628; 
+    background-color: #B5BC89;
+    outline: none;
+}
+
+.search-members input[type="search"] :focus{
+    outline: none; 
+
+
+}
+
+.registered-comp{
+    margin-right: 3vw;
+}
+
+.competitions-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin : 1vh; 
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+
+}
+
+
+.rectangle-group {
+    width: 40%;
+    position: relative;
+    display: flex;
+    
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 20vh;
+    margin: 2vh;
+    
+}
+
+.rectangle-group img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.competition-info {
+    background: #B5BC89;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: space-between;
+    align-items: end;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    padding: 2vh;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%; /* Adjust the width as needed */
+    opacity: 0;
+}
+
+.competition-name {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+    
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%; /* Adjust the width as needed */
+}
+
+
+
+
+
+
+/* .competition-info h3 {
+    font-size: 2vw;
+}
+.competition-info h4{
+    opacity: 0;
+    position: absolute;
+}
+.competition-info p{
+    font-size: 1vw;
+} */
+
+.register-button {
+    text-decoration: none;
+    background-color: rgba(181, 188, 137,);
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.2vh;
+    margin: 2vh 1vw;
+    padding: 0.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+/* .competition-name .register-button {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.2vh;
+    padding: 1vw ;
+    
+    font-size: 2vw;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+} */
+
+.details{
+    height: 50%;
+    padding: 1vh;
+}
+@media (max-width: 711px) {
+    .competition-info h3 {
+        font-size: 1.8vw;
+    }
+    
+    .competition-info p{
+        font-size: 1vw;
+    }
+    .register-button{
+        padding: 0vw 1vw;
+        font-size: 1em;
+    }
+
+}
+@media (max-width: 500px) {
+    .row1, .row2, .row3,  .row4, .row5, .row6{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .rectangle-group {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 3vh;
+    }
+    .competition-info h3 {
+        font-size: 1em;
+    }
+    
+    .competition-info p{
+        font-size: 1.5vw;
+    }
+    .register-button{
+        padding: 0vw 1vw;
+        font-size: 1em;
+    }
+    
+}
